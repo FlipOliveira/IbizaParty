@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:p="http://primefaces.org/ui"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:c="http://java.sun.com/jsp/jstl/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF8" />
+	<title>Sistema Ibiza Party</title>
+	<h:outputStylesheet library="css" name="estilotelas.css" />
+</h:head>
+<h:body>
+	<p:layout fullPage="true">
+		<p:layoutUnit position="north" header="Sistema do Ibiza Party" resizable="false" closable="false" collapsible="false">
+		</p:layoutUnit>
+		
+		<p:layoutUnit position="south" header="Desenvolvido por:" resizable="false" closable="false" collapsible="false">
+		</p:layoutUnit>
+		
+		<p:layoutUnit position="west" size="250" header="Menu" resizable="false" closable="false" collapsible="true">
+				<h:form>
+				<p:panelMenu style="width:240px">
+		        <p:submenu label="Arquivo">
+		            <p:menuitem value="Principal" outcome="/pages/principal.xhtml" />
+		            <p:menuitem value="Sair" icon="ui-icon-arrowrefresh-1-w" />
+		        </p:submenu>
+		        <p:submenu label="Cadastros">
+		            <p:menuitem value="Produtos" outcome="/pages/cadastroProdutos.xhtml" ajax="false" />
+		            <p:menuitem value="Reservas" outcome="/pages/cadastroReservas.xhtml" ajax="false" />
+		            <p:menuitem value="Clientes" outcome="/pages/cadastroCliente.xhtml" ajax="false" />
+		        </p:submenu>
+		        <p:separator />
+		        <p:submenu label="Pedidos" >
+		            <p:submenu label="Novo Pedido">
+		                <p:submenu label="Tipo do Pedido">
+		                    <p:menuitem value="Mesa" />
+		                    <p:menuitem value="Cliente" />
+		                </p:submenu>
+		            </p:submenu>
+		            <p:menuitem value="Listar" />
+		            <p:menuitem value="Fechar pedido" />
+		        </p:submenu>
+		        <p:submenu label="Caixa">
+		            <p:menuitem value="Gerar receita" ajax="false" />
+		            <p:menuitem value="Fechar caixa" ajax="false" />
+		        </p:submenu>
+		    </p:panelMenu>
+		   </h:form>
+		</p:layoutUnit>
+		
+		<p:layoutUnit position="center" resizable="false" closable="false" collapsible="false">
+		<ui:insert name="conteudo" />
+		</p:layoutUnit>
+		
+		
+		
+	</p:layout>
+</h:body>
+</html>

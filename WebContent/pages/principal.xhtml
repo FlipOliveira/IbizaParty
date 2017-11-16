@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:p="http://primefaces.org/ui"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<ui:composition template="/templates/templateSistema.xhtml">
+	<ui:define name="conteudo">
+		<p:panel id="horizontal" header="Ibiza Party [MESAS]" toggleable="true" toggleOrientation="horizontal">
+ 			<div class="ui-g">
+ 				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <p:graphicImage id="movieBtn" library="images" style="cursor:pointer" name="mesalivre.png" />
+					        <p:overlayPanel id="moviePanel" for="movieBtn" hideEffect="fade" dynamic="true" style="width:600px">
+					        <h2>testando</h2>
+					        </p:overlayPanel>
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="Livre" />
+					</p:panelGrid>
+				</div>
+				
+				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <a title="Teste" onclick="PF('dlg2').show();"><p:graphicImage library="images" name="mesalivre.png" /></a>
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="Livre" />
+					</p:panelGrid>
+					<p:dialog header="Editando" widgetVar="dlg2" modal="false" height="100">
+    				<h:outputText value="Inserir o que vai ser editado." />
+					</p:dialog> 
+				</div>
+				
+				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <p:graphicImage library="images" name="mesaocupada.png" />
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="Ocupada" />
+					</p:panelGrid>
+				</div>
+				
+				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <p:graphicImage library="images" name="mesalivre.png" />
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="Livre" />
+					</p:panelGrid>
+				</div>
+				
+			</div>
+			
+			<div class="ui-g">
+ 				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <p:graphicImage library="images" name="mesalivre.png" />
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="#" />
+					</p:panelGrid>
+				</div>
+				
+				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <p:graphicImage library="images" name="mesaocupada.png" />
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="#" />
+					</p:panelGrid>
+				</div>
+				
+				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <p:graphicImage library="images" name="mesalivre.png" />
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="#" />
+					</p:panelGrid>
+				</div>
+				
+				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <p:graphicImage library="images" name="mesalivre.png" />
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="#" />
+					</p:panelGrid>
+				</div>
+				
+			</div>
+			
+			<div class="ui-g">
+ 				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <p:graphicImage library="images" name="mesalivre.png" />
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="#" />
+					</p:panelGrid>
+				</div>
+				
+				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <p:graphicImage library="images" name="mesalivre.png" />
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="#" />
+					</p:panelGrid>
+				</div>
+				
+				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <p:graphicImage library="images" name="mesaocupada.png" />
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="#" />
+					</p:panelGrid>
+				</div>
+				
+				<div class="ui-g-6 ui-md-3">
+					<p:panelGrid columns="2">
+					    <f:facet name="header">
+					        <p:graphicImage library="images" name="mesalivre.png" />
+					    </f:facet>
+					 
+					    <h:outputText value="Código:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Número:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="qtd Cadeiras:" />
+					    <h:outputText value="#" />
+					 
+					    <h:outputText value="Status:" />
+					    <h:outputText value="#" />
+					</p:panelGrid>
+				</div>
+				
+			</div>
+		</p:panel>
+	</ui:define>			
+</ui:composition>
+
+</html>
